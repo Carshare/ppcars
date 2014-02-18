@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Available:</strong>
+  <%= @car.available %>
+</p>
+
+<p>
+  <strong>Cover photo:</strong>
+  <%= @car.cover_photo %>
+</p>
+
+<p>
+  <strong>Car:</strong>
+  <%= @car.car_id %>
+</p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @car.make %>
+</p>
+
+<p>
+  <strong>Module:</strong>
+  <%= @car.module %>
+</p>
+
+<p>
+  <strong>Overall:</strong>
+  <%= @car.overall %>
+</p>
+
+<p>
+  <strong>Price daily:</strong>
+  <%= @car.price_daily %>
+</p>
+
+<p>
+  <strong>Price hourly:</strong>
+  <%= @car.price_hourly %>
+</p>
+
+<p>
+  <strong>Price weekly:</strong>
+  <%= @car.price_weekly %>
+</p>
+
+<p>
+  <strong>Region:</strong>
+  <%= @car.region %>
+</p>
+
+<p>
+  <strong>Street:</strong>
+  <%= @car.street %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @car.year %>
+</p>
+
+<%= link_to 'Edit', edit_car_path(@car) %> |
+<%= link_to 'Back', cars_path %>

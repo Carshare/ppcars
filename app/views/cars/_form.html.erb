@@ -1,0 +1,65 @@
+<%= form_for(@car) do |f| %>
+  <% if @car.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@car.errors.count, "error") %> prohibited this car from being saved:</h2>
+
+      <ul>
+      <% @car.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :available %><br>
+    <%= f.text_field :available %>
+  </div>
+  <div class="field">
+    <%= f.label :cover_photo %><br>
+    <%= f.text_field :cover_photo %>
+  </div>
+  <div class="field">
+    <%= f.label :car_id %><br>
+    <%= f.text_field :car_id %>
+  </div>
+  <div class="field">
+    <%= f.label :make %><br>
+    <%= f.text_field :make %>
+  </div>
+  <div class="field">
+    <%= f.label :module %><br>
+    <%= f.text_field :module %>
+  </div>
+  <div class="field">
+    <%= f.label :overall %><br>
+    <%= f.number_field :overall %>
+  </div>
+  <div class="field">
+    <%= f.label :price_daily %><br>
+    <%= f.number_field :price_daily %>
+  </div>
+  <div class="field">
+    <%= f.label :price_hourly %><br>
+    <%= f.number_field :price_hourly %>
+  </div>
+  <div class="field">
+    <%= f.label :price_weekly %><br>
+    <%= f.number_field :price_weekly %>
+  </div>
+  <div class="field">
+    <%= f.label :region %><br>
+    <%= f.text_field :region %>
+  </div>
+  <div class="field">
+    <%= f.label :street %><br>
+    <%= f.text_field :street %>
+  </div>
+  <div class="field">
+    <%= f.label :year %><br>
+    <%= f.number_field :year %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
